@@ -177,29 +177,6 @@ h2 {
     font-style: normal;
 }
 
-.about-details {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1rem;
-    margin-top: 1.5rem;
-}
-
-.about-detail {
-    padding: 1rem;
-    border: 1px solid var(--footer-background);
-    border-radius: 8px;
-}
-
-.about-detail h3 {
-    margin-top: 0;
-    color: var(--heading-color);
-}
-
-.about-detail ul {
-    margin-bottom: 0;
-    padding-left: 1.25rem;
-}
-
 #skills {
     background:
         linear-gradient(rgba(7, 24, 39, 0.78), rgba(7, 24, 39, 0.78)),
