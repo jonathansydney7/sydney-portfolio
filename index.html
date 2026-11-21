@@ -3,169 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta
-        name="description"
-        content="Portfolio of an Artificial Intelligence and Data Science student at Victoria University in Kampala, Uganda."
-    >
-    <title>AI &amp; Data Science Student | Portfolio</title>
+    <meta name="description" content="Sydney is an Artificial Intelligence and Data Science student building practical AI project ideas in Kampala, Uganda.">
+    <title>Sydney | Practical AI &amp; Data Science</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav aria-label="Main navigation">
-            <a href="#about">About me</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">What I’m learning</a>
-            <a href="#opportunities">Opportunities</a>
-            <a href="#contacts">my contacts</a>
+    <header class="site-header">
+        <nav class="site-nav" aria-label="Main navigation">
+            <a class="brand" href="index.html">SYDNEY<span>.</span></a>
+            <div class="nav-links">
+                <a href="index.html" aria-current="page">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="game.html">Game</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <button class="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
         </nav>
-        <div class="hero">
-            <p class="eyebrow">Artificial Intelligence &amp; Data Science Student</p>
-            <h1>Building practical AI for everyday problems</h1>
-            <p>
-                I’m a full-time Bachelor of Artificial Intelligence and Data Science student
-                at Victoria University in Kampala, Uganda. I learn best by building useful
-                ideas into real solutions.
-            </p>
-            <img
-                src="ai-learning-background.jpg"
-                alt="A robotic hand reaching toward glowing atom-like light trails on a dark blue background"
-                class="hero-image"
-            >
-            <a class="button-link" href="#projects">Explore my projects</a>
-            <a class="button-link button-link-secondary" href="#contacts">Contact me</a>
-            <button id="theme-toggle" type="button" aria-pressed="false">Use dark theme</button>
-        </div>
     </header>
 
     <main>
-        <section id="about">
-            <p class="eyebrow">About me</p>
-            <h2>Curious about AI that helps people</h2>
-            <p>
-                I’m an aspiring AI and data science practitioner who enjoys learning through
-                hands-on projects. I’m building my skills in Python, data science, and web
-                development so I can create technology that is useful, understandable, and
-                grounded in people’s real needs.
-            </p>
-            <p>
-                i was inspired by a number of problems that i faced while in my day to day activities and said to myslef, someone has to do somehting about these small but gradually growing and costing  businesses significant amounts of money. I’m also interested in challenges close to home, reducing the routine
-                workload teachers face and helping people make better sense of their money with AI-backed tools. I’m excited to keep learning, building, and exploring how AI can be applied thoughtfully to real problems.
-            </p>
-            <blockquote class="about-quote">
-                <p>"whats the most important thing i need to understand in this very situation"</p>
-                <cite>— Sam Altman, Open AI CEO</cite>
-            </blockquote>
-            <p>The above quote makes me question my creations and this helps me to evalutae and implement working solutions.</p>
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="status-dot"></span> AI &amp; DATA SCIENCE · KAMPALA, UGANDA</p>
+                <h1>Building practical AI for <span>everyday problems.</span></h1>
+                <p class="lead">
+                    I’m a full-time Bachelor of Artificial Intelligence and Data Science student
+                    at Victoria University. I learn by building ideas that can help people in
+                    education, personal finance, and beyond.
+                </p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="projects.html">Explore projects <span aria-hidden="true">→</span></a>
+                    <a class="button button-secondary" href="contact.html">Get in touch</a>
+                </div>
+                <p class="hero-note">Curious mind. Problem-solving mindset. Learning by doing.</p>
+            </div>
+            <div class="hero-visual">
+                <img
+                    src="ai-learning-background.jpg"
+                    alt="A robotic hand reaching toward glowing atom-like light trails on a dark blue background"
+                    class="hero-image"
+                >
+                <span class="visual-tag">HUMAN-CENTERED AI</span>
+            </div>
         </section>
 
-        <section id="projects">
-            <p class="eyebrow">Projects</p>
-            <h2>Ideas I’m exploring</h2>
+        <section class="section-block home-focus">
+            <div class="section-heading">
+                <p class="eyebrow">WHAT I’M WORKING TOWARD</p>
+                <h2>AI grounded in real needs</h2>
+                <p>My current ideas explore practical ways AI could support people in everyday life.</p>
+            </div>
+            <div class="focus-grid">
+                <article class="focus-card">
+                    <span class="card-index">01</span>
+                    <h3>Education</h3>
+                    <p>Exploring curriculum-focused AI support for teachers, students, and parents.</p>
+                </article>
+                <article class="focus-card">
+                    <span class="card-index">02</span>
+                    <h3>Personal finance</h3>
+                    <p>Thinking about ways AI can make spending patterns easier to understand.</p>
+                </article>
+                <article class="focus-card">
+                    <span class="card-index">03</span>
+                    <h3>Useful assistants</h3>
+                    <p>Building ideas around making everyday tasks and information easier to manage.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-block home-projects">
+            <div class="section-heading section-heading-row">
+                <div>
+                    <p class="eyebrow">SELECTED IDEAS</p>
+                    <h2>Projects in progress</h2>
+                </div>
+                <a class="text-link" href="projects.html">See all projects <span aria-hidden="true">→</span></a>
+            </div>
             <div class="project-grid">
                 <article class="project-card">
+                    <p class="project-type">AI · EDUCATION</p>
                     <h3>Kanick</h3>
-                    <p class="project-audience"><strong>For:</strong> Teachers, students, and parents</p>
-                    <p>
-                        An AI education chatbot concept designed around the Ugandan curriculum,
-                        supporting learning and teaching.
-                    </p>
+                    <p>An AI education chatbot concept designed around the Ugandan curriculum.</p>
+                    <a class="card-link" href="projects.html#kanick">Project details <span aria-hidden="true">↗</span></a>
                 </article>
                 <article class="project-card">
-                    <h3>Personal AI assistant</h3>
-                    <p class="project-audience"><strong>For:</strong> People managing everyday tasks</p>
-                    <p>
-                        A Jarvis-style assistant concept exploring how AI could make everyday
-                        tasks and information easier to manage.
-                    </p>
+                    <p class="project-type">AI · PERSONAL FINANCE</p>
+                    <h3>Budget tracker</h3>
+                    <p>A budgeting idea that explains spending patterns to help people understand their money.</p>
+                    <a class="card-link" href="projects.html#budget-tracker">Project details <span aria-hidden="true">↗</span></a>
                 </article>
-                <article class="project-card">
-                    <h3>AI-backed budget tracker</h3>
-                    <p class="project-audience"><strong>For:</strong> People who want to understand their spending</p>
-                    <p>
-                        A budgeting idea that uses AI to explain spending patterns and help
-                        people understand where their money goes.
-                    </p>
-                </article>
-            </div>
-            <h3 class="project-table-heading">Project overview</h3>
-            <div class="table-scroll">
-                <table class="project-table">
-                    <caption>Problems, intended users, and focus areas for my project ideas</caption>
-                    <thead>
-                        <tr>
-                            <th scope="col">Project</th>
-                            <th scope="col">Problem it addresses</th>
-                            <th scope="col">Intended users</th>
-                            <th scope="col">Focus</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">Kanick</th>
-                            <td>Getting support with learning and teaching the Ugandan curriculum</td>
-                            <td>Teachers, students, and parents</td>
-                            <td>AI education chatbot</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Personal AI assistant</th>
-                            <td>Managing everyday tasks and information</td>
-                            <td>People looking for a personal assistant</td>
-                            <td>Jarvis-style AI assistant</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">AI-backed budget tracker</th>
-                            <td>Understanding personal spending patterns</td>
-                            <td>People who want to understand their spending</td>
-                            <td>AI-powered spending explanations</td>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
         </section>
 
-        <section id="skills">
-            <p class="eyebrow">Learning by building</p>
-            <h2>Skills I’m developing</h2>
-            <p>
-                I’m growing my practical foundation in Python, data science, and web
-                development, and learning how to apply AI thoughtfully to real problems.
-                I’m keen to keep improving through collaboration, feedback, and hands-on work.
-            </p>
-            <h3>Technical foundations I’m developing</h3>
-            <ul class="skill-list">
-                <li>Python</li>
-                <li>Data science</li>
-                <li>Web development</li>
-            </ul>
-            <h3>Area I’m exploring</h3>
-            <ul class="skill-list">
-                <li>Applied AI</li>
-            </ul>
-        </section>
-
-        <section id="opportunities">
-            <p class="eyebrow">What’s next</p>
-            <h2>Open to opportunities</h2>
-            <p>
-                I’m open for an internship or project role where I can apply my growing
-                skills, learn from a team, and help build  solutions that people can
-                genuinely use. I’m particularly motivated by projects in education,
-                personal finance, and other practical community challenges.
-            </p>
-            <p>I have to combine my skills and undersatnding with AI which basiclly makes my execution faster and reliable beacuse we ought to make this new technology an ally and work with rather not letting it work for us.</p>
-        </section>
-        <section id="contacts">
-            <p class="eyebrow">Get in touch</p>
-            <h2>My contacts</h2>
-            <p>Name; AHIMBISIBWE SYDNEY JONATHAN</p>
-            <p>Phone; <a href= "tel:+256741551356">+256 741551356</a></p>
-            <p>email; <a href="mailto:sydneyahimbisibwe@gmail.com">sydneyahimbisibwe@gmail.com</a></p>
-            <p>CV; <a href="SYDNEY-Resume-A4.pdf" target="_blank" rel="noopener">View or download my CV (PDF)</a></p>
+        <section class="cta-band">
+            <div>
+                <p class="eyebrow">OPEN TO INTERNSHIPS &amp; PROJECT ROLES</p>
+                <h2>Let’s build something useful.</h2>
+            </div>
+            <a class="button button-primary" href="contact.html">Contact me <span aria-hidden="true">→</span></a>
         </section>
     </main>
-    <footer>
-        <p>Thanks for visiting. I’m learning, building, and looking forward to what comes next.</p>
+
+    <footer class="site-footer">
+        <a class="brand" href="index.html">SYDNEY<span>.</span></a>
+        <p>Learning, building, and exploring practical AI.</p>
+        <a href="contact.html">Contact <span aria-hidden="true">↗</span></a>
     </footer>
     <script src="script.js"></script>
 </body>
